@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defauldHref="/places"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{place.title}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="deletePlace()">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="place.imageURL"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
